@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+    html, body{
+        height:100%;
+    }
+    body{
+        background: linear-gradient(180deg, #66ACFF 0%, #0391f8 100%);
+
+    }
+
+.inventory {
+    max-width: 1920px;
+    max-height: 1080px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-gap:1em;
+    outline:solid darkblue;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
+    
+}
+.card {
+    background: #fff;
+    box-shadow: 0px 4px 4px rgb(rgb(0, 0, 0), rgb(0, 0, 0), rgb(1, 1, 26));
+    border-radius: 4px;
+    position: relative;
+
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left:2px;
+    padding-right:2px;
+    
+    
+}
+.card:hover{
+    cursor: pointer;
+    color:sandybrown;
+    text-shadow: darkred;
+    outline-style:ridge;
+}
+.card-a{
+    a
+};
+
+
+</style>
+<div id="meny"></div>
+<div id="style"></div>
+
+
+<script>
+//Modell
+let html;
+class inventoryItem{
+    constructor(navn, description, quantity, image)
+    {
+    this.name=name;
+    this.description = description;
+    this.quantity = quantity;
+    this.image=image;}
+}
+//Views
+updateview()
+function updateview(){
+    html = /*html*/`<div class="inventory">
+
+<button class="card card-a" onclick="inventoryView()">Show inventory</button>
+<button class="card card-b"onclick="updateview()">Hide inventory</button>
+<button class="card card-c">Create new inventory</button>
+<button class="card card-d">Delete inventory</button>
+<button class="card card-e">Edit inventory</button>
+
+
+
+</div>
+`
+document.getElementById('style').innerHTML=html;
+}
+
+function inventoryView(){
+    html = /*html*/`<div class="inventory">
+<div class="card card-f">F</div>
+<div class="card card-g">G</div>
+
+<div class="card card-h">H</div>
+
+<div class="card card-i">I</div>
+
+<div class="card card-j">J</div>
+
+<div class="card card-k">K</div>
+
+<div class="card card-l">L</div>
+
+<div class="card card-m">M</div>
+
+<div class="card card-n">N</div>
+
+<div class="card card-o">O</div>
+
+<div class="card card-P">P</div>
+
+<div class="card card-q">Q</div>
+
+<div class="card card-r">R</div>
+
+<div class="card card-s">S</div>
+
+<div class="card card-t">T</div>
+
+<div class="card card-u">U</div>
+
+<div class="card card-v">V</div>
+
+<div class="card card-w">W</div>
+
+<div class="card card-x">X</div>
+
+<div class="card card-y">Y</div>
+<button class="card card-a" onclick="inventoryView()">Show inventory</button>
+<button class="card card-b"onclick="updateview()">Hide inventory</button>
+<button class="card card-c">Create new inventory</button>
+<button class="card card-d">Delete inventory</button>
+<button class="card card-e">Edit inventory</button>
+</div>`
+
+   document.getElementById('style').innerHTML = html;
+}
+
+function inventory(letter){
+
+}
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>;

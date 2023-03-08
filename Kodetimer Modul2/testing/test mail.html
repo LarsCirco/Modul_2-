@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="sendQuestionnaire()">hei</button>
+    <script>
+function sendQuestionnaire() {
+  const recipient = "recipient@example.com";
+  const subject = "Questionnaire";
+  const body = "Please fill out the following questionnaire...";
+  const mailtoLink = `mailto:${recipient}?subject=${subject}&body=${body}`;
+  window.location.href = mailtoLink;
+}
+
+    </script>
+</body>
+</html>
